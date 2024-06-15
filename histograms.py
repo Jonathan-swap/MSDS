@@ -8,9 +8,9 @@ plt.title('Distribution of random numbers')
 plt.show()
 
 #### Binomial distribution
-n = 1000
+n = 10
 p = .5
-samplesB = np.random.binomial(n, p, 10000)
+samplesB = np.random.binomial(n, p, 100)
 plt.hist(samplesB, bins=12, alpha=.5,color="orange")
 plt.title('Binomial Distibution')
 plt.grid(False)
@@ -27,7 +27,7 @@ plt.show()
 #### Normal Distribution
 mu = 0
 sigma = 1
-samplesN = np.random.normal(mu, sigma, 10000)
+samplesN = np.random.normal(mu, sigma, 100)
 plt.hist(samplesN, bins=12, alpha=.5, color="orange")
 plt.title('Normal Distribution')
 plt.grid(False)
