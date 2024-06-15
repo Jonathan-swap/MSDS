@@ -1,0 +1,7 @@
+#binomial 
+
+
+#normal 
+
+
+#poisson
