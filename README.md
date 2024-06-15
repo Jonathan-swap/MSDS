@@ -6,7 +6,7 @@ This has information and projects from my MSDS orientation and programs
 
 
 # Highlights
-A simmple, bulleted list of the main selling points of your software.
+A simple, bulleted list of the main selling points of your software.
 
 # Overview
 A paragraph explaining what the software does, how it works, and who made it.
