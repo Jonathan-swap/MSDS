@@ -26,6 +26,7 @@ print()
 print(sum(array))
 
 
-#problem 3 
+#problem 3
+import primes
 n = 600851475143
 
