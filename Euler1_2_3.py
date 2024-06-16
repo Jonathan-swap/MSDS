@@ -15,11 +15,11 @@ next_num = num2
 array = [0]
 
 while next_num <= n:
-    print(next_num, end=" ")
+    print(next_num, end = " ")
     num1 = num2
     num2 = next_num
     next_num = num1 + num2
-    if next_num % 2 ==0:
+    if next_num % 2 == 0:
         array.append(next_num)
 print()
 
