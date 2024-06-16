@@ -1,0 +1,4 @@
+
+The Cenral Limit Theorem states that as the average of independent random variables approaches a normal distribution regardless of the original distribution. As Binomial distributions are defined by n and p, the distribution of the mean will become bell-shaped and symmetric around the new mean (mu = N*p) as n -> N. 
+
+The two pngs of the Normal and Binomial distribution look very similar when I increased the n and sample sizes. Whereas, when you look at the distributions for lower values of n, the same is not true. Only when N -> a very large number, do we see that the binomial distribution approximates a normal distribution. 
