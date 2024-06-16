@@ -27,6 +27,13 @@ print(sum(array))
 
 
 #problem 3
-import primes
+import sympy
 n = 600851475143
+factor = 2
+while n>1:
+    if n % factor ==0:
+        n /= factor
+    else:
+        factor = sympy.nextprime(factor)
+print(factor)
 
