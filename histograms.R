@@ -1,26 +1,28 @@
 #binomial 
+library(ggplot2)
 n <- 10
 p <- .5
-samplesB <- np.random.binomial(n, p, 100)
-plt.hist(samplesB, bins = 12, alpha = .5, color = "orange")
-plt.title("Binomial Distibution")
-plt.grid(False)
-plt.show()
+samplesB <- rbinom(100, n, p)
+dataframe <- data.frame(samplesB)
+ggplot(dataframe, aes(x = samplesB)) + 
+  geom_histogram(binwidth = 1, alpha = 1, fill = "blue", color = "orange") +
+  ggtitle("Binomial Distibution")
+
 
 #normal
 mu <- 0
 sigma <- 1
-samplesN <- np.random.normal(mu, sigma, 100)
-plt.hist(samplesN, bins = 12, alpha = .5, color = "orange")
-plt.title("Normal Distribution")
-plt.grid(False)
-plt.show()
+samplesN <- rnorm(100, mean = mu, sd = sigma)
+dataframe <- data.frame(samplesN)
+ggplot(dataframe, aes(x = samplesN)) + 
+  geom_histogram(binwidth = 1, alpha = 1, fill = "blue", color = "orange") +
+  ggtitle("Normal Distibution")
 
 
 #poisson
 lam <- 3
-samplesP <- np.random.poisson(lam, 100)
-plt.hist(samplesP, bins = 12, alpha = .5, color = "orange")
-plt.title("Poisson Distribution")
-plt.grid(False)
-plt.show()
+samplesP <- rpois(100, lambda = lam)
+dataframe <- data.frame(samplesP)
+ggplot(dataframe, aes(x = samplesP)) + 
+  geom_histogram(binwidth = 1, alpha = 1, fill = "blue", color = "orange") +
+  ggtitle("Poisson Distibution")
